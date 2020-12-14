@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>タスク作成</title>
+</head>
+<body>
+<label th:method="post" th:action="@{./}" th:object="${taskCreateForm}">
+    <div>
+        <label>
+            内容：<input type="text" th:field="*{content}"/>
+        </label>
+        <p th:if="${#fields.hasErrors('content')}" th:errors="*{content}">エラーメッセージ</p>
+    </div>
+
+    <table style="display:inline-flex">
+        <td width="100" >本体</td>
+        <td width="100" >素材1</td>
+        <td width="100">素材2</td>
+        <td width="100">素材3</td>
+        <td width="100">素材4</td>
+        <td width="100">素材5</td>
+    </table>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content1}"></label>
+        <label><input type="text" size="10" th:field="*{content2}"></label>
+        <label><input type="text" size="10" th:field="*{content3}"></label>
+        <label><input type="text" size="10" th:field="*{content4}"></label>
+        <label><input type="text" size="10" th:field="*{content5}"></label>
+        <label><input type="text" size="10" th:field="*{content6}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content7}"></label>
+        <label><input type="text" size="10" th:field="*{content8}"></label>
+        <label><input type="text" size="10" th:field="*{content9}"></label>
+        <label><input type="text" size="10" th:field="*{content10}"></label>
+        <label><input type="text" size="10" th:field="*{content11}"></label>
+        <label><input type="text" size="10" th:field="*{content12}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content13}"></label>
+        <label><input type="text" size="10" th:field="*{content14}"></label>
+        <label><input type="text" size="10" th:field="*{content15}"></label>
+        <label><input type="text" size="10" th:field="*{content16}"></label>
+        <label><input type="text" size="10" th:field="*{content17}"></label>
+        <label><input type="text" size="10" th:field="*{content18}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content19}"></label>
+        <label><input type="text" size="10" th:field="*{content20}"></label>
+        <label><input type="text" size="10" th:field="*{content21}"></label>
+        <label><input type="text" size="10" th:field="*{content22}"></label>
+        <label><input type="text" size="10" th:field="*{content23}"></label>
+        <label><input type="text" size="10" th:field="*{content25}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content26}"></label>
+        <label><input type="text" size="10" th:field="*{content27}"></label>
+        <label><input type="text" size="10" th:field="*{content28}"></label>
+        <label><input type="text" size="10" th:field="*{content29}"></label>
+        <label><input type="text" size="10" th:field="*{content30}"></label>
+        <label><input type="text" size="10" th:field="*{content31}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content32}"></label>
+        <label><input type="text" size="10" th:field="*{content33}"></label>
+        <label><input type="text" size="10" th:field="*{content34}"></label>
+        <label><input type="text" size="10" th:field="*{content35}"></label>
+        <label><input type="text" size="10" th:field="*{content36}"></label>
+        <label><input type="text" size="10" th:field="*{content37}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content38}"></label>
+        <label><input type="text" size="10" th:field="*{content39}"></label>
+        <label><input type="text" size="10" th:field="*{content40}"></label>
+        <label><input type="text" size="10" th:field="*{content41}"></label>
+        <label><input type="text" size="10" th:field="*{content42}"></label>
+        <label><input type="text" size="10" th:field="*{content43}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content44}"></label>
+        <label><input type="text" size="10" th:field="*{content45}"></label>
+        <label><input type="text" size="10" th:field="*{content46}"></label>
+        <label><input type="text" size="10" th:field="*{content47}"></label>
+        <label><input type="text" size="10" th:field="*{content48}"></label>
+        <label><input type="text" size="10" th:field="*{content49}"></label>
+    </div>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content50}"></label>
+        <label><input type="text" size="10" th:field="*{content51}"></label>
+        <label><input type="text" size="10" th:field="*{content52}"></label>
+        <label><input type="text" size="10" th:field="*{content53}"></label>
+        <label><input type="text" size="10" th:field="*{content54}"></label>
+        <label><input type="text" size="10" th:field="*{content55}"></label>
+    </div>
+
+    <table style="display:inline-flex">
+        <td width="100" >使用アイテム</td>
+    </table>
+    <div style="display:inline-flex">
+        <label><input type="text" size="10" th:field="*{content56}"></label>
+        <label><input type="text" size="10" th:field="*{content57}"></label>
+    </div>
+
+    <div>
+        <input type="submit" value="作成"/>
+    </div>
+</label>
+</form>
+</body>
+</html>
